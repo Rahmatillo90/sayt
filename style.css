@@ -5,12 +5,7 @@ body {
   background: #f9f9f9;
   color: #333;
 }
-header {
-  background: #6e051d;
-  color: #fff;
-  padding: 20px 20px;
-  text-align: center;
-}
+
 section {
   padding: 1px;
   max-width: 800px;
@@ -88,7 +83,101 @@ footer {
   color: #444;
 }
 body {
-  background: url("c:\Users\user\Pictures\Фоновые изображения рабочего стола\9. Пустыня.jpg")
-    no-repeat center center fixed;
+  background: url("img/bg.jpg") no-repeat center center fixed;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.hero {
+  background: url("img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero {
+  background: url("img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px 50px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contact h2 {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  min-width: 120px;
+  text-align: center;
+}
+
+.telegram {
+  background-color: #0088cc;
+}
+.whatsapp {
+  background-color: #25d366;
+}
+.instagram {
+  background-color: #e4405f;
+}
+.github {
+  background-color: #333;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #444;
+}
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 15px 40px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    min-width: 90%;
+    max-width: 300px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
