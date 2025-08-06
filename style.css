@@ -29,13 +29,15 @@ a {
   display: inline-block;
   margin: 5px 10px;
   padding: 10px 15px;
-  background-color: #950c27;
+
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
-
+#contact a:hover {
+  background-color: #555;
+}
 .social-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -67,4 +69,26 @@ a {
 
 .btn:hover {
   opacity: 0.8;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #f4f4f4); /* pastel fon */
+}
+
+footer {
+  margin-top: auto;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #444;
+}
+body {
+  background: url("c:\Users\user\Pictures\Фоновые изображения рабочего стола\9. Пустыня.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
 }
